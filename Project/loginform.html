@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<title></title>
+<style type="text/css">
+body{
+    margin: 0px;
+    background-image:url("signimage.jpeg");
+    size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;   
+}
+input[type=text],
+select{
+	width: 50%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=submit] {
+    width: 15%;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: gray;
+}
+
+
+input[type=cancel] {
+
+	width: 15%;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+    align-content: center;
+    text-align: center;
+}
+input[type=cancel]:hover {
+    background-color: gray;
+}
+
+
+
+</style>
+<div class="bgimg">
+
+<body >
+    <form action="loginform.php" method="POST">
+<font size="4" color="darkblue"><b><p style="text-indent: 60em;"><a href="signform.html"><u>Signin</u></a> &nbsp      <a href="homepage.html"><u> Home</u></a></p></b></font>
+
+<center><h1 style="color: navy">Log-in form</h1></center>
+<center><font size="4" color="white">
+
+
+
+<label for="Email"><b>Email:</b></label>
+<input type="text" id="email" name="Email" placeholder="Enter email or contact...."><br>
+
+<label for="pass"><b>Password:</b></label>
+<input type="text" id="pass" name="pass" placeholder="Enter 8 digits password"><br>
+
+<font color="black">Not yet Registered? <a href="signform.html">Register now...</a></font><br>
+
+
+<label for="submit"></label>
+<input type="submit" id="submit" name="btn_submit" placeholder="submit" value="submit"><br>
+
+<label for="cancel"></label>
+<input type="cancel" id="cancel" name="btn_cancel" placeholder="Cancel" value="Cancel"><br> 
+
+</font>
+</center>
+</body>
+</div>
+</form>
+</html>

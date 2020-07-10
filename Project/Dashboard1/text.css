@@ -1,0 +1,49 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+  #bgimg { 
+    background-image: url("trees.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100%;
+
+  }   
+
+
+  .pad{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+  }
+
+  .vertical-menu {
+    /*position: fixed;*/
+    height: 666px;
+    width: 200px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+ 

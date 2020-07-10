@@ -1,0 +1,1320 @@
+
+/* Navigation Bar */
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: mediumseagreen;
+    
+}
+
+li {
+    float: right;
+    font-size: 6;
+    font color: black;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: gray;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+li.dropdown1 {
+    display: inline-block;
+}
+
+
+/*bottom navigation bar*/
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position:;
+  bottom: 0;
+  width: 100%;
+  background-color: mediumseagreen;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: gray;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+/* footer */
+
+.footer {
+
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   text-align: center;
+
+}
+
+
+.fa {
+  
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 20px;
+  float: right;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+
+
+
+/* Homepage */
+
+/*#bgimg{
+
+  background-image: url("indiabg.jpg");background-position: center;background-repeat: no-repeat;
+  background-size: 100%;
+}
+.pad{
+
+  padding-top: 250px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-content: center;
+  width: 100%;
+
+}
+
+.search{
+    
+    margin-left: 80px;
+    margin-right: 80px;
+    /*margin-top: 10px; */
+
+}
+
+/* Information */
+/*.info{
+
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+
+}
+
+/* slider */
+/*  * {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+ /*
+ .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+
+/*
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+/*
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+/*
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+
+/*
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.0s;
+  animation-name: fade;
+  animation-duration: 2.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+
+/*
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+/* Image overlay */
+/*
+.container {
+  position: relative;
+  width: 20%;
+  margin: 5px;
+  margin-left: 20px;
+  float: left;
+  padding-bottom: 10px;
+  margin-right: 10px;  
+}
+
+.image {
+  display: block;
+  width: 105%;
+  height: 220px;
+  margin-left: 50px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0px;
+  background-color: lightcoral;
+  overflow: hidden;
+  width: 105%;
+  transition: .5s ease;
+  margin-left: 50px;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 230px;
+  width: 105%;
+  margin-left: 50px;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+/* Login */
+
+/* Full-width input fields */
+
+/*
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 4px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+/* Set a style for all buttons */
+/*
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+/*
+.cancelbtn1 {
+    width: auto;
+    padding: 10px 18px;
+    background-color: red;
+}
+
+/* Center the image and position the close button */
+/*
+.imgcontainer1 {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar1 {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.container1 {
+    padding: 16px;
+}
+
+span.psw1 {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+/*
+.modal {
+    display: none; /* Hidden by default */
+  /*  position: fixed; /* Stay in place */
+  /*  z-index: 1; /* Sit on top */
+  /*  left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+  /*  height: 100%; /* Full height */
+  /*  overflow: auto; /* Enable scroll if needed */
+     /*  background-color: rgb(0,0,0); /* Fallback color */
+   /*  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+   /*  padding-top: 0px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+     
+
+}
+
+/* Modal Content/Box */
+
+ /*
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+   /*  border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    /* padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+}
+
+/* The Close Button (x) */
+
+ /*
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+
+ /*
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+ /*
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+/* Signin form */
+/* Full-width input fields */
+
+ /*
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+ /*
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+ /*
+.cancelbtn2 {
+    width: auto;
+    padding: 10px 18px;
+    background-color: red;
+}
+
+/* Center the image and position the close button */
+ /*
+.imgcontainer1 {
+    text-align: center;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+
+img.avatar2 {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.container2 {
+    padding: 16px;
+
+}
+
+span.psw1 {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+ /*
+.modal {
+    display: none; /* Hidden by default */
+    /* position: fixed; /* Stay in place */
+    /* z-index: 1; /* Sit on top */
+    /* left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    /* height: 100%; /* Full height */
+    /* overflow: auto; /* Enable scroll if needed */
+   /*  background-color: rgb(0,0,0); /* Fallback color */
+    /* background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    /* padding-top: 60px;
+}
+
+/* Modal Content/Box */
+
+ /*
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    /* border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+
+ /*
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0px;
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+
+ /*
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+ /*
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+
+/* side bar */
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.main-nav{
+  padding-top: 50px;
+  
+  padding-right: 20px;
+  
+  float: left;
+}
+ .main-nav ul{
+  position: absolute;
+  height: 100%;
+  width: 250px;
+  background-color: white;
+  float: left;
+  /*align-content: center;*/
+}
+.main-nav a{
+  display: block;
+  padding: 10px 0px 10px 20px;
+  color: black;
+  letter-spacing:0;
+  text-decoration-color: blue;
+  align-content: left;
+  }
+.main-nav a:hover{
+  background: #ccc;
+  color: 1px solid white;
+}
+.main-nav a.active{
+   background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+/* description */
+/*.info{
+
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+
+}*/
+
+/* package cards */
+
+.left{
+
+  float: left;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+/* card left*/
+.card {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-top: 25px;
+  text-align: center;
+  font-family: arial;
+  margin-left: 320px;
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 40px;
+  padding-top: 100px;
+  align-content: center;
+  width: 100%;
+  border: 2px;
+  padding: 20px;
+  float: left;
+  
+
+}
+
+.title {
+  color: black;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: lightblue;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: pink;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+.right{
+
+  float: right;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* card right */
+.card1 {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-top: 25px;
+  text-align: center;
+  font-family: arial;
+  margin-right: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  align-content: center;
+  width: 100%;
+  border: 2px;
+  padding: 20px;
+  float: right;
+  
+}
+
+.title1 {
+  color: black;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: lightblue;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: pink;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+/* Read More */
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: black;
+  font-size: .9em;
+  line-height: 2;
+  border-radius: .25em;
+  float: right;
+}
+
+/* Other style */ 
+/*body {
+  padding: 2%;
+}*/
+
+p {
+  padding: 2%;
+  background: #fff9c6;
+  border-radius: .25em;
+}
+
+/*.container{
+
+  margin-top: 30px;
+  margin-left: 50px;
+  border: 1px;
+
+}
+#img{
+
+    background-image: url(kolhapur.jpg);
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    float: left;
+
+}
+#desc{
+
+  margin-top: 30px;
+  width: 100%;
+  float: right;
+  margin-left: 50px;
+} */
+
+
+/* slider */
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* Title */
+.title{
+
+    margin-top: 100px;
+    margin-left: 180px;
+    
+    }
+
+/* Overview */
+.overview{
+
+    margin-top: 10px;
+    margin-top: 18px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/* Itenarary */
+.itenarary{
+
+    margin-top: 18px;
+    padding-right: 80px;
+    padding-left: 80px;
+
+}
+
+/* Itenarary details */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+/* Booking  */
+
+.book{
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+button.booking{
+    
+    color: darkorange;
+    cursor: pointer;
+    padding: 10px;
+    margin:center;
+    margin-left: 45%;
+    border: 4px;
+    outline- color: black;
+    font-size: 30px;
+    transition: 0.4s;
+    background-color: aquamarine;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+
+/*blog */
+
+*{
+
+  box-sizing: border-box;
+
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media all and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+
+/* Book_now */
+
+input[type=text],
+select{
+
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+
+.bgimg{
+        background-image: url();
+        width: 100%;
+        height: 500px;
+        padding-bottom: 80px;
+        padding-right: 0px;
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
+        margin-right:px;
+        padding-top: 20px;
+
+}
+/*
+.border{
+
+    border: 3px solid darkorange;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;           
+
+}*/
+
+
+/* Booking  */
+
+button.booking{
+    
+    color: darkorange;
+    cursor: pointer;
+    padding: 10px;
+    margin:center;
+    border: 4px;
+    outline- color: black;
+    font-size: 30px;
+    transition: 0.4s;
+    background-color: aquamarine;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    width: 15%;
+
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+
+
+/* blog */
+
+*{
+
+  box-sizing: border-box;
+
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media all and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+

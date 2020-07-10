@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Pannel</title>
+	<style type="text/css">
+
+	body{
+		margin: 0px;
+		border:0px;
+	}
+
+#header{
+
+	width: 100%;
+	background: silver;
+	color: black;
+	position: fixed;
+	height: 120px;
+
+}
+
+.title{
+	font color:black; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   	padding-top: 120px;
+    width: 25%;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: green;
+    color: white;
+}
+
+	#data{
+		height: 700px;
+		background: #f1f1f1;
+
+	}
+
+	</style>
+	
+</head>
+<body>
+	<form>
+		
+		<div id="header" class="title">
+			 
+			<font size="4" color="black">Admin Panel</font>
+			
+		</div>
+
+
+<ul>
+  <li><a href="add_state.html"><input type="checkbox" name="checkbox">Add States<i></a></li>
+  <li><a href="location.html"><input type="checkbox" name="checkbox">Add Location</a></li>
+  <li><a href="add_loc_spots.html"><input type="checkbox" name="checkbox">Add Location Spot</a></li>
+  <li><a href="add_category.html"><input type="checkbox" name="checkbox">Add category of pakages</a></li>
+  <li><a href="add_package.html"><input type="checkbox" name="checkbox">Add Package Details</a></li>
+  <li><a href="#news">View Package Details </a></li>
+  <li><a href="#contact">View Booking Details</a></li>
+  <li><a href="#about">View User Details</a></li>
+  <li><a href="#about">Logout</a></li>
+</ul>
+
+
+		<div id="sidebar">
+			
+		</div>
+
+		<div id="data">
+			
+		</div>
+	</form>
+
+</body>
+</html>

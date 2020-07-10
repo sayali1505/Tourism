@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="nav.css">
+<style type="text/css">
+
+	body{
+		margin: 0px;
+		border:0px;
+	}
+
+
+	
+input[type=text],
+
+select{
+    padding-right: 10px;
+	width: 100%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=submit] {
+    width: 100%;
+
+    background-color: darkgreen;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: green;
+
+}
+
+div {
+
+    border-radius: 10px;
+    background-image: 
+    padding: 20px;
+
+}
+input[type=reset] {
+
+	width: 100%;
+    background-color: darkred;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+    align-content: center;
+
+}
+
+input[type=reset]:hover {
+    background-color: red;
+}
+.font{
+	size: 4;
+	color: black;
+	padding-left: 18%;
+	padding-top: 5%;
+
+}
+label{
+    padding-left: 10px;
+}
+
+</style>
+<body>
+	<form>
+		<div class="pad" id="bgimg">
+      <h1><center><font size="10" color="white" style=" "> WESTERN  &nbsp INDIAN &nbsp  TOURISM</font></center></h1>
+</div>
+  
+<div class="title">
+      <font align="center" style="font-family: 'Oleo Script';font-size: 30px"><center style="background-color: black;color: white;padding: 10px 10px"><b>ADMIN &nbsp PANEL</b></center></font>
+</div>
+
+
+<div class="main-nav">
+    <ul class="main-nav-ul">
+        <li class="active"><a href="nav.html" class="active">Home</a></li>
+        <li><a href="#">states<span></span></a>
+            <ul>
+                <li><a href="states.php">Add states</a></li>
+                <li><a href="#">Show states</a></li>
+                
+            </ul>
+        </li>
+
+        <li><a href="#">locations</a>
+            <ul>
+                <li><a href="locations.php">Add locations</a></li>
+                <li><a href="">View Locations</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Location spots<span></span></a>
+            <ul>
+                <li><a href="#">Add spots</a></li>
+                <li><a href="#">View spots</a></li>
+                
+            </ul>
+        </li>
+        <li><a href="#">Categories<span></span></a>
+            <ul>
+                <li><a href="#">Add categories</a></li>
+                <li><a href="#">View categories</a></li>
+                
+            </ul>
+        </li>
+        <li><a href="#">Packages<span></span></a>
+            <ul>
+                <li><a href="#">Create package</a></li>
+                <li><a href="#">View packages</a></li>
+                
+            </ul>
+        </li>
+
+
+
+        <li><a href="#">Logout</a></li>
+    </ul>
+</div>
+
+
+<div class="font">
+
+<center><h1 style="color: navy">Add Categories</h1></center>
+<center>
+<table style="border-style: solid; border-width: 1px; border-color: 1px solid black">
+<tr>
+<td><label for="cat_id"><b>Category ID:</b></label></td>
+<td><input type="text" id="cat_id" name="cat_id" placeholder="Category ID "><br></td>
+</tr>
+
+<tr>
+<td><label for="cat_name"><b>Category name:</b></label></td>
+<td><input type="text" id="cat_name" name="cat_name" placeholder="Category name "><br></td>
+</tr>
+
+<tr>
+<td><label for="desc_cat"><b>Description of category :</b></label></td>
+<td><textarea name="desc_cat"  rows="3" style="overflow-y: scroll;" wrap></textarea><br></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td><label for="submit"></label></td>
+<td><input type="submit" id="submit" name="btn_submit" placeholder="Save" value="Save"></td>
+
+<td><label for="submit"></label></td>
+<td><input type="submit" id="submit" name="btn_submit" placeholder="Edit" value="Edit"></td>
+
+<td><label for="reset"></label></td>
+<td><input type="reset" id="reset" name="btn_cancel" placeholder="Cancel" value="Cancel"><br></td> 
+
+</tr>
+
+</table>
+</center>
+</form>
+</div>
+</body>
+
+</html>
+
+

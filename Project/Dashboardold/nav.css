@@ -1,0 +1,79 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+  #bgimg { 
+    background-image: url("trees.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100%;
+
+  }   
+  .pad{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+  }
+
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.main-nav{
+	position: absolute;
+	height: 100%;
+	width: 250px;
+	background-color: #eee;
+}
+.main-nav a{
+	
+	
+	padding: 10px 0px 10px 20px;
+	color: black;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	
+}
+.main-nav a.active{
+	 background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+.main-nav-ul ul{
+	display: none;
+}
+
+.main-nav-ul ul li{
+	left: 100%;
+	top: -2%;
+}
+.main-nav-ul  li:hover{
+	background-color: gray;
+}
+
+.main-nav-ul li:hover ul{
+	display: block;
+	background-color: green;
+	color: white;
+	margin: 0px;
+}
+
+
+.main-nav-ul li ul a{
+	background-color: green;
+	color: white;
+	border-bottom: 1px solid black;
+	box-decoration-break: 1px;
+	margin: 0px;	
+}
+
+
+.main-nav-ul li ul a:hover{
+	color: red;
+	background-color: goldenrod;
+}

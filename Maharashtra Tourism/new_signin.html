@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: mediumseagreen;
+    
+}
+
+li {
+    float: right;
+    font-size: 6;
+    font color: black;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: gray;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li.dropdown1 {
+    display: inline-block;
+}
+
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown1-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown1-content a:hover {background-color: #f1f1f1}
+
+.dropdown1:hover .dropdown1-content {
+    display: block;
+}
+
+
+/*bottom navigation bar*/
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position:;
+  bottom: 0;
+  width: 100%;
+  background-color: mediumseagreen;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.navbar a:hover {
+  background: gray;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+	
+/* Login */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 4px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn1 {
+    width: auto;
+    padding: 10px 18px;
+    background-color: red;
+}
+
+/* Center the image and position the close button */
+.imgcontainer1 {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.container1 {
+    padding: 16px;
+
+}
+.bgimg{
+
+	background-color: ;
+}
+
+.border{
+	
+	border: 2px solid black;
+	margin-left: 300px;
+	margin-right: 300px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+
+</style>
+
+</head>
+<body>
+
+<ul>
+
+  <li><a href="Travel_Talk1.html"><font  color="red" size="4">Get a quote</font></a></li>
+  <li><a href="#"><font size="4">Blogs</font></a></li>
+  
+  <li class="dropdown">
+    
+    <a href="#" class="dropbtn"><font size="4">Destinations</font> </a>
+    <div class="dropdown-content">
+      
+      <a href="#"><font size="4">Mumbai</font></a>
+      <a href="#"><font size="4">Mahabaleshwar</font></a>
+      <a href="#"><font size="4">Pune</font></a>
+      <a href="#"><font size="4">Kolhapur</font></a>
+    
+    </div>
+    
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn"><font size="4">Packages</font> </a>
+    <div class="dropdown-content">
+    	<a href="#"><font size="4"><b>By Themes</b></font></a>	
+      <a href="mah_packages.html"><font size="4">Beach Holidays</font></a>
+      <a href="#"><font size="4">Adventure Tours</font></a>
+      <a href="#"><font size="4">Family Packages</font></a>
+      <a href="#"><font size="4">Golden triangle tour</font></a>
+      <a href="#"><font size="4">Chota break</font></a>
+     
+
+    </div></li>
+    
+  <li><a href="mah_tourism_home.html"><font size="4">Home</font></a></li>
+
+</ul>
+
+
+
+
+
+<div class="bgimg">
+
+  <div class="border">
+    
+    <!--
+    <div class="imgcontainer1">
+
+      <img src="signpro.jpg" alt=" " class="avatar" width="250px" height="250px">
+    </div> -->
+
+    <center>
+    <div class="container1">
+
+<center><h1 style="color: navy">Welcome...!</h1></center>
+<center><h2 style="color: navy">New user! Register here...</h2></center>
+<center><font size="4">
+
+
+<label for="fname"><b>Enter first name:</b></label>
+<input type="text" id="fname" name="firstname" placeholder="your name...."><br>
+
+<label for="lname"><b>Enter last name:</b></label>
+<input type="text" id="lname" name="lastname" placeholder="your last name...."><br>
+
+<label for="dob"><b>DOB(dd/mm/yy):</b></label>
+<input type="text" id="dob" name="dob" placeholder="Enter date of birth...."><br>
+
+<label for="email"><b>Email:</b></label>
+<input type="text" id="email" name="email" placeholder="Enter email...."><br>
+
+<label for="contact"><b>Contact:</b></label>
+<input type="text" id="contact" name="contact" placeholder="Enter number...."><br>
+
+<label for="pass"><b>Password:</b></label>
+<input type="text" id="pass" name="pass" placeholder="Enter 8 digits password"><br>
+
+<label for="cpass"><b>Confirm password:</b></label>
+<input type="text" id="cpass" name="cpass" placeholder="Enter confirm password"><br>
+
+    	<div class="container1" style="background-color:white">
+  
+      <button type="submit" name="btn_submit">Signin</button>
+      <button type="button" style="background-color: red;">Cancel</button>
+   
+    </div>
+
+    </div>
+
+</center>
+
+</div>
+</div>
+
+
+<div class="navbar">
+  <a href="#">About us</a>
+  <a href="#">Terms & conditions</a>
+  <a href="#">Sitemap</a>
+  <a href="Travel_Talk1.html">Inquire now</a>
+  
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style type="text/css">
+
+
+/* Navigation Bar */
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: mediumseagreen;
+    
+}
+
+li {
+    float: right;
+    font-size: 6;
+    font color: black;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: gray;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+li.dropdown1 {
+    display: inline-block;
+}
+
+
+/*bottom navigation bar*/
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position:;
+  bottom: 0;
+  width: 100%;
+  background-color: mediumseagreen;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: gray;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+/* footer */
+
+.footer {
+
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   text-align: center;
+
+}
+
+
+.fa {
+  
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 20px;
+  float: right;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/* side bar */
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.main-nav{
+  padding-top: 50px;
+  
+  padding-right: 20px;
+  
+  float: left;
+}
+ .main-nav ul{
+  position: absolute;
+  height: 100%;
+  width: 250px;
+  background-color: white;
+  float: left;
+  /*align-content: center;*/
+}
+.main-nav a{
+  display: block;
+  padding: 10px 0px 10px 20px;
+  color: black;
+  letter-spacing:0;
+  text-decoration-color: blue;
+  align-content: left;
+  }
+.main-nav a:hover{
+  background: #ccc;
+  color: 1px solid white;
+}
+.main-nav a.active{
+   background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+
+
+
+
+/* package cards */
+
+.left{
+
+  float: left;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+/* card left*/
+.card {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-top: 25px;
+  text-align: center;
+  font-family: arial;
+  margin-left: 320px;
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 40px;
+  padding-top: 100px;
+  align-content: center;
+  width: 100%;
+  border: 2px;
+  padding: 20px;
+  float: left;
+  
+
+}
+
+.title {
+  color: black;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: lightblue;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: pink;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+.right{
+
+  float: right;
+  margin-top: 25px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* card right */
+.card1 {
+
+  box-shadow: 0 4px 8px 0 rgba(0, 1.0, 0.2, 1.0);
+  max-width: 300px;
+  margin-top: 25px;
+  text-align: center;
+  font-family: arial;
+  margin-right: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  align-content: center;
+  width: 100%;
+  border: 2px;
+  padding: 20px;
+  float: right;
+  
+}
+
+.title1 {
+  color: black;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: lightblue;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: pink;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* Read More */
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: black;
+  font-size: .9em;
+  line-height: 2;
+  border-radius: .25em;
+  float: right;
+}
+
+p {
+  padding: 2%;
+  background: #fff9c6;
+  border-radius: .25em;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+<ul>
+  <li><a href="#"><font  color="red">Get a quote</font></a></li>
+  <li><a href="#">Blogs</a></li>
+  
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Destinations </a>
+    <div class="dropdown-content">
+      <a href="#">Mumbai</a>
+      <a href="#">Mahabaleshwar</a>
+      <a href="#">Pune</a>
+      <a href="#">Aurangabad</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Packages </a>
+    <div class="dropdown-content">
+        <a href="#"><font size="5"><b>By Themes</b></font></a>  
+      <a href="#">Beach Holidays</a>
+      <a href="#">Adventure Tours</a>
+      <a href="#">Family Packages</a>
+      <a href="#">Golden triangle tour</a>
+      <a href="#">Chota break</a>
+
+
+    </div>
+  </li>
+
+  <li><a href="#">Home</a></li>
+
+
+
+</ul>
+
+
+
+
+
+<font size="8" color="darkpink">
+<center><b>Beach  Holidays </center></font>
+
+<div class="read-more-wrap">
+  <input type="checkbox" class="read-more-state" id="post-1" />
+
+
+<p class="read-more-wrap"><i><font size="4"> India has a coastline of 7,517 kilometers bounded by Indian Ocean and the three great depths of Arabian Sea at southwest, Bay of Bengal at southeast and the Laccadive Sea to the south.<span class="read-more-target"> The coastline of Indian states are home to some of the best beaches in the world. The ideal way to explore all this is by opting for Beach  holiday packages in india. The exotic beaches of Goa, blessed beaches of Kerala and pristine beaches of Andaman and Nicobar Islands.<br>The coastal beauties have their own blissful resorts, seafood cuisine, relaxing spas, diving and water sports. These locales are ideal for balmy holidays of sun, sand and sea. The sandy shorelines are complete with adventure water sports include surfing, parasailing, canoeing, catamaran and yatch rides, scuba diving and snorkeling.
+
+Explore the pleasures of India shores, grab attractive deals with us. Relaxing, adventure, fun and more are accessible with beach tour packages.</span></font></i></p>
+
+<label for="post-1" class="read-more-trigger"></label>
+</div>
+
+
+
+<div class="main-nav">
+  <ul>
+    <font size="6" color="blue"><center>Tour Themes</center></font>
+    <li class="active"><a href="#"><input type="checkbox" name="checkbox ">Beach Holidays</a></li>
+    <li><a href="#"><input type="checkbox" name="checkbox">Adventure Tours<span></span></a></li>
+    <li><a href="#"><input type="checkbox" name="checkbox">Family Packages</a></li>
+    <li><a href="#"><input type="checkbox" name="checkbox">Golden Triangle Tour</a></li>
+    <li><a href="#"><input type="checkbox" name="checkbox">Chota Break</a></li>
+  </ul>
+</div>
+
+
+<div class="left">
+
+
+<div class="card">
+  <img src="kolhapur.jpg" alt="kolhapur" width="100%" height= "200px">
+  <h1>Kolhapur</h1>
+  <p class="title">1-3 days</p>
+  <p>Rankala lake- new palace</p>
+  
+ <p><button>View Details</button></p>
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="card1">
+  <img src="mahabaleshwar1.jpg" alt="mahabaleshwar" width="100%" height="200px">
+  <h1>Mahabaleshwar</h1>
+  <p class="title">1-7 days</p>
+  <p>Mahabaleshwar - Pratapgad</p>
+  
+ <p><button>View Details</button></p>
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="left">
+
+
+<div class="card">
+  <img src="kolhapur.jpg" alt="kolhapur" width="100%" height= "200px">
+  <h1>Kolhapur</h1>
+  <p class="title">1-3 days</p>
+  <p>Rankala lake- new palace</p>
+  
+ <p><button>View Details</button></p>
+</div>
+
+</div>
+
+
+<div class="right">
+
+<div class="card1">
+  <img src="mahabaleshwar1.jpg" alt="mahabaleshwar" width="100%" height="200px">
+  <h1>Mahabaleshwar</h1>
+  <p class="title">1-7 days</p>
+  <p>Mahabaleshwar - Pratapgad</p>
+  
+ <p><button>View Details</button></p>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="left">
+
+
+<div class="card">
+  <img src="kolhapur.jpg" alt="kolhapur" width="100%" height= "200px">
+  <h1>Kolhapur</h1>
+  <p class="title">1-3 days</p>
+  <p>Rankala lake- new palace</p>
+  
+ <p><button>View Details</button></p>
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="card1">
+  <img src="mahabaleshwar1.jpg" alt="mahabaleshwar" width="100%" height="200px">
+  <h1>Mahabaleshwar</h1>
+  <p class="title">1-7 days</p>
+  <p>Mahabaleshwar - Pratapgad</p>
+  
+ <p><button>View Details</button></p>
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="navbar">
+  <a href="#">About us</a>
+  <a href="#">Terms & conditions</a>
+  <a href="#">Sitemap</a>
+  <a href="Travel_Talk1.html">Inquire now</a>
+  
+</div>
+
+<div class="footer">
+
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-youtube"></a>
+
+</div>
+
+
+
+
+</form>
+</body>
+</head>
+</html>

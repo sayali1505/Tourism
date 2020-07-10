@@ -1,0 +1,80 @@
+body{
+		margin: 0px;
+		border:0px;
+	}
+
+    #bgimg { 
+
+    background-image: url("trees.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100%;
+
+  }   
+
+
+  .pad{
+    position: fixed;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+  }
+
+
+#header{
+
+	width: 100%;
+	background: #AFA5E1;
+	color: black;
+	position: fixed;
+	height: 120px;
+
+}
+
+.title{
+	font color:black;
+	text-shadow: 3px 2px  #006400;
+	font-size: 30px;
+	left: 100px;
+
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   	padding-top: 120px;
+    width: 20%;
+    background-color: #006400;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 10px 16px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: pink;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: black;
+    color: white;
+}
+
+#data {
+		height: 700px;
+		background: #f1f1f1;
+
+	}

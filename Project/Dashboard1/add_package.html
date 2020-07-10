@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+
+	body{
+		margin: 0px;
+		border:0px;
+	}
+
+#header{
+
+	width: 100%;
+	background: silver;
+	color: black;
+	position: fixed;
+	height: 120px;
+
+}
+
+.title{
+	font color:black;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 120px;
+    width: 25%;
+    background-color: silver;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: green;
+    color: white;
+}
+
+
+	#data{
+		height: 700px;
+		background: #f1f1f1;
+
+	}
+
+	
+input[type=text],
+select{
+	width: 50%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=submit] {
+    width: 60%;
+    background-color: darkgreen;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: green;
+}
+
+div {
+    border-radius: 10px;
+    background-image: 
+    padding: 20px;
+
+}
+input[type=cancel] {
+
+	width: 15%;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+    align-content: center;
+
+}
+input[type=cancel]:hover {
+    background-color: gray;
+}
+.font{
+	size: 4;
+	color: black;
+	padding-left: 18%;
+	padding-top: 15%;
+
+}
+
+</style>
+<body>
+	<form>
+		
+		<div id="header" class="title">
+			 
+			<font size="4" color="black">Admin Panel</font>
+			
+		</div>
+
+
+<ul>
+  <li><a href="add_state.html">Add States</a></li>
+  <li><a href="location.html">Add Location</a></li>
+  <li><a href="add_loc_spots.html">Add Location Spot</a></li>
+   <li><a href="add_category.html">Add category of pakages</a></li>
+  <li><a href="add_package.html">Add Package Details</a></li>
+  <li><a href="#news">View Package Details </a></li>
+  <li><a href="#contact">View Booking Details</a></li>
+  <li><a href="#about">View User Details</a></li>
+  <li><a href="#about">Logout</a></li>
+</ul>
+<div class="font">
+
+<center><h1 style="color: navy">Add your package</h1></center>
+<center>
+
+<label for="p_id"><b>Package ID:</b></label>
+<input type="text" id="p_id" name="p_id" placeholder="Package ID "><br>
+
+<label for="add_place"><b>Add place:</b></label>
+<input type="text" id="add_place" name="add_place" placeholder=""><br>
+
+<label for="no_adults"><b>No. of Adults:</b></label>
+<input type="text" id="no_adults" name="no_adults" placeholder=""><br>
+
+<label for="no_child"><b>No. of children:</b></label>
+<input type="text" id="no_child" name="no_child" placeholder=""><br>
+
+<label for="desc"><b>Description:</b></label>
+<input type="text" id="desc" name="desc" placeholder=""><br>
+
+<label for="amount"><b>Amount:</b></label>
+<input type="text" id="amount" name="amount" placeholder=""><br>
+
+<label for="no_days"><b>No. of Days:</b></label>
+<input type="text" id="no_days" name="no_days" placeholder=""><br>
+
+<label for="no_nights"><b>No. of nights:</b></label>
+<input type="text" id="no_nights" name="no_nights" placeholder=""><br>
+
+<label for="add_image"><b>Add image:</b></label>
+<input type="text" id="add_image" name="add_image" placeholder="Choose file"><br>
+
+<label for="submit"></label>
+<input type="submit" id="submit" name="btn_submit" placeholder="submit"><br>
+
+<label for="cancel"></label>
+<input type="cancel" id="cancel" name="btn_cancel" placeholder="Cancel"><br> 
+
+</center>
+</form>
+</div>
+</body>
+
+</html>
+
+

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+ <style type="text/css">
+
+*{
+  margin: 0px;
+}
+   
+/* Navigation Bar */
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: mediumseagreen;
+    
+}
+
+li {
+    float: right;
+    font-size: 6;
+    font color: black;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: gray;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li.dropdown1 {
+    display: inline-block;
+}
+
+li.head{
+
+  padding-left: 12px;
+  padding-top: 8px;
+  font-size: 45px;
+  font-family: Bradley Hand ITC;
+  float: left;
+}
+
+
+/*bottom navigation bar*/
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position:;
+  bottom: 0;
+  width: 100%;
+  background-color: mediumseagreen;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: gray;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+/* footer */
+
+.footer {
+
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   text-align: center;
+
+}
+
+
+.fa {
+  
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 20px;
+  float: right;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+/* blog */
+
+*{
+
+  box-sizing: border-box;
+
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media all and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+
+
+
+ </style>
+
+</head>
+
+<body bgcolor="lightblue">
+
+<ul>
+
+  <li><a href="Travel_Talk1.html"><font  color="red" size="4">Get a quote</font></a></li>
+  <li><a href="blog.html"><font size="4">Blogs</font></a></li>
+  
+  <li class="dropdown">
+    
+    <a href="#" class="dropbtn"><font size="4">Destinations</font> </a>
+    <div class="dropdown-content">
+      
+      <a href="#"><font size="4">Mumbai</font></a>
+      <a href="#"><font size="4">Mahabaleshwar</font></a>
+      <a href="#"><font size="4">Pune</font></a>
+      <a href="#"><font size="4">Kolhapur</font></a>
+    
+    </div>
+    
+  </li>
+
+  <li class="dropdown">
+    <a href="#" class="dropbtn"><font size="4">Packages</font> </a>
+    <div class="dropdown-content">
+      <a href="#"><font size="4"><b>By Themes</b></font></a>  
+      <a href="mah_packages.html"><font size="4">Beach Holidays</font></a>
+      <a href="#"><font size="4">Adventure Tours</font></a>
+      <a href="#"><font size="4">Family Packages</font></a>
+      <a href="#"><font size="4">Golden triangle tour</font></a>
+      <a href="#"><font size="4">Chota break</font></a>
+     
+
+    </div></li>
+    
+    
+  <li><a href="mah_tourism_home.html"><font size="4">Home</font></a></li>
+
+  <li class="head"><b><font color="#b30000">M</font><font color="#ffff99">aharashtra</font> <font color="#b30000">T</font><font color="#ffff99">ourism</font></font></b></li>
+
+</ul>
+
+
+<div class="bgimg">
+
+<div class="title">
+<font size="7" color="tomato" style="font-family:Helvetica, sans-serif">
+  <center>Blogs</center>
+
+</font>
+</div>
+
+<font style="font-family:Helvetica, sans-serif">
+
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>Gateway of India</h2>
+      <img src="gateway_of_india2.jpg" width="100%" height="220px">
+
+      <p>The Gateway of India is an arch monument built during the 20th century in Bombay, India. The monument was erected to commemorate the landing of King George V and Queen Mary at Apollo Bunder on their visit to India in 1911.</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h2>Pratapgad</h2>
+      <img src="pratapgad_fort.jpg" width="100%" height="220px">
+
+      <p>Pratapgad (also transcribed Pratapgarh or Pratapgadh) literally 'Valour Fort' is a large fort located in Satara district, in the Western Indian state of Maharashtra. Significant as the site of the Battle of Pratapgad, the fort is now a popular tourist destination.</p>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h2>Venna Lake</h2>
+      <img src="venna_lake1.jpg" width="100%" height="220px">
+
+
+      <p>Venna lake is one of the major tourist attractions of Mahabaleshwar in Maharashtra state in India. The lake is surrounded by trees on all sides. Tourists can enjoy a boat ride over the lake or a horse ride next to the lake. A number of small eateries line the banks of the lake.</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h2>Rankala Lake</h2>
+      <img src="rankala_lake.jpg" width="100%" height="220px">
+
+      <p>Rankala Lake is a picturesque lake in the Kolhapur District of the state of Maharashtra in western India.</p>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h2>Ajanta Ellora Caves</h2>
+      <img src="Imgs\ajanta_caves.jpg" width="100%" height="220px">
+
+
+      <p>The Ajanta Caves are about 29 rock-cut Buddhist, Hindu and Jain cave monuments which date from the 2nd century BCE to about 480 or 650 CE in Aurangabad district of Maharashtra state of India.The caves include paintings and rock cut sculptures described as among the finest surviving examples of ancient Indian art, particularly expressive paintings that present emotion through gesture, pose and form.</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h2>Sindhudurg Fort</h2>
+      <img src="sindhudurg_fort1.jpg" width="100%" height="220px">
+
+
+      <p>Sindhudurg Fort is a historical fort that occupies an islet in the Arabian Sea, just off the coast of Maharashtra in Western India. The fortress lies on the shore of Malvan town of Sindhudurg District in the Konkan region of Maharashtra, 450 kilometres south of Mumbai. It is a protected monument.</p>
+    </div>
+  </div>
+</div>
+
+
+</font>
+
+
+<div class="navbar">
+  <a href="#">About us</a>
+  <a href="#">Terms & conditions</a>
+  <a href="#">Sitemap</a>
+  <a href="Travel_Talk1.html">Inquire now</a>
+  
+</div>
+
+
+<div class="footer"> 
+
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-youtube"></a>
+
+</div>
+
+
+
+</body>
+</html>

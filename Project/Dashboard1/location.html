@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+
+	body{
+		margin: 0px;
+		border:0px;
+	}
+
+#header{
+
+	width: 100%;
+	background: silver;
+	color: black;
+	position: fixed;
+	height: 120px;
+
+}
+
+.title{
+	font color:black;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 120px;
+    width: 25%;
+    background-color: silver;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: green;
+    color: white;
+}
+
+
+	#data{
+		height: 700px;
+		background: #f1f1f1;
+
+	}
+
+	
+input[type=text]
+{
+	width: 50%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=submit] {
+    width: 15%;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: gray;
+}
+
+div {
+    border-radius: 10px;
+    background-image: 
+    padding: 20px;
+
+}
+input[type=reset] {
+
+	width: 15%;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+    align-content: center;
+
+}
+input[type=cancel]:hover {
+    background-color: gray;
+}
+.font{
+	size: 4;
+	color: black;
+	padding-left: 18%;
+	padding-top: 15%;
+
+}
+
+</style>
+<body>
+	<form action="add_location.php" method="POST">
+		
+		<div id="header" class="title">
+			 
+			<font size="4" color="black">Admin Panel</font>
+			
+		</div>
+
+
+<ul>
+  <li><a href="add_state.html">Add States</a></li>
+  <li><a href="location.html">Add Location</a></li>
+  <li><a href="add_loc_spots.html">Add Location Spot</a></li>
+ <li><a href="add_category.html">Add category of pakages</a></li>
+  <li><a href="add_package.html">Add Package Details</a></li>
+  <li><a href="#news">View Package Details </a></li>
+  <li><a href="#contact">View Booking Details</a></li>
+  <li><a href="#about">View User Details</a></li>
+  <li><a href="#about">Logout</a></li>
+</ul>
+
+<div class="font">
+
+<center><h1 style="color: navy">Add Location</h1></center>
+<center>
+
+<label for="loc_id"><b>Location ID:</b></label>
+<input type="text" id="loc_id" name="loc_id" placeholder="Location ID "><br>
+
+<label for="loc_name"><b>Location name:</b></label>
+<input type="text" id="loc_name" name="loc_name" placeholder="Location name"><br>
+
+
+<label for="loc_state_id"><b>State ID:</b></label>
+<input type="text" id="loc_state_id" name="loc_state_id" placeholder="State_id"><br>
+
+
+<label for="submit"></label>
+<input type="submit" id="submit" name="btn_submit1" placeholder="Save" value="Save">
+
+<label for="submit"></label>
+<input type="submit" id="submit" name="btn_submit2" placeholder="Edit" value="Edit">
+
+<label for="reset"></label>
+<input type="reset" id="reset" name="btn_reset" placeholder="reset" value="Reset"><br> 
+
+</centers>
+</form>
+</div>
+</body>
+
+</html>
+
+

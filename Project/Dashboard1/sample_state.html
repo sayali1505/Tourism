@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="new.css">
+
+<style>
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+    position: relative;
+    width: 40%;
+    float :left;
+    margin:5px;
+    margin-right: 10px;
+    margin-left: 40px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 40%;
+  height:20%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.7;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.openmodal {background-color: #4CAF50;} /* Green */
+.openmodal:hover {background-color: #46a049;}
+
+.Location {background-color: #4CAF50;} /* Green */
+.Location:hover {background-color: #46a049;}
+
+
+</style>
+</head>
+<body>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Add Details</a>
+  
+  <a href="#">View package details</a>
+  <a href="#">View user details</a>
+  <a href="#">View booking details</a>
+  <a href="#">Log out</a>
+</div>
+
+<div id="main">
+    <div class="pad" id="bgimg">
+  <h1><center><font size="10" color="white" style=" "> WESTERN  &nbsp INDIAN &nbsp  TOURISM</font></center></h1></div>
+  
+  <div class="title">
+<font align="center" style="font-family: 'Oleo Script';font-size: 30px"><center style="background-color: black;color: white;padding: 10px 10px"><b>ADMIN &nbsp PANEL</b></center></font>
+
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+
+
+
+<div class="container">
+  <img src="Place.jpg" alt="Avatar" class="image" style="width: 80%">
+  <div class="middle">
+      <!-- Trigger/Open The Modal -->
+<button id="myBtn" class="btn openmodal">Show States</button></div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>States in west India</p>
+    <table>
+      <tr>
+        <td>State id</td>
+        <td>State Name</td>
+      </tr>
+      <tr>
+        <td>MH</td>
+        <td>Maharashtra</td>
+      </tr>
+      <tr>
+        <td>GA</td>
+        <td>Goa</td>
+      </tr>
+      <tr>
+        <td>GJ</td>
+        <td>Gujarat</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <img src="Place.jpg" alt="Avatar" class="image" style="width: 80%">
+  <div class="middle">
+      <!-- Trigger/Open The Modal -->
+<button id="myBtn1" class="btn Location">Location</button></div>
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>States  in west India</p>
+    <table>
+      <tr>
+        <td>State id</td>
+        <td>State Name</td>
+      </tr>
+      <tr>
+        <td>MH</td>
+        <td>Maharashtra</td>
+      </tr>
+      <tr>
+        <td>GA</td>
+        <td>Goa</td>
+      </tr>
+      <tr>
+        <td>GJ</td>
+        <td>Gujarat</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal1');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  </div>
+</body>
+</html>
